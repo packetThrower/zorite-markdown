@@ -1,0 +1,24 @@
+version: 2
+
+updates:
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    # gpui ships as weekly zed snapshots that can change its API; it moves by
+    # hand, in step with zorite and GPUI Kit.
+    ignore:
+      - dependency-name: "gpui-pre"
+      - dependency-name: "gpui-pre-platform"
+    groups:
+      cargo-minor:
+        update-types: ["minor", "patch"]
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      actions-all:
+        patterns: ["*"]

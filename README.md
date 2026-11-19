@@ -17,7 +17,7 @@ The crate has two layers:
   shared recognition of constructs (links, GitHub alert kinds and fold
   characters, table styles, heading scales, `key:: value` properties,
   ` ^block-id` anchors, `#Heading` / `#^id` link targets, `![[embed]]`
-  lines, and `==highlight==` / colored-HTML recognition). The reading view, the [`zorite-editor`](../zorite-editor/README.md)
+  lines, and `==highlight==` / colored-HTML recognition). The reading view, the [`zorite-editor`](https://github.com/packetThrower/zorite-editor)
   WYSIWYG view, and Zorite's PDF exporter all use it, so each construct is
   defined once.
 - **The reading view**, `MarkdownView`, behind the default-on `view` feature,
@@ -40,7 +40,7 @@ The complete API reference is in [API.md](API.md).
   `<!-- table:STYLE -->` marker
 - **Bidirectional text** — a block containing right-to-left prose is broken in
   *logical* order and laid out row by row via
-  [`gpui-bidi`](../gpui-bidi/README.md), then mirrored: alignment, list markers,
+  [`gpui-bidi`](https://github.com/packetThrower/gpui-bidi), then mirrored: alignment, list markers,
   quote and callout rules, table column order, property rows. Links keep their
   colour, hitboxes and hover cursor inside reordered runs, and inline rasters
   sit on their spacer's real visual box. A left-to-right block containing a
