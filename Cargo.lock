@@ -888,9 +888,9 @@ checksum = "e629b9b98ef3dd8afe6ca2bd0f89306cec16d43d907889945bc5d6687f2f13c7"
 
 [[package]]
 name = "gpui-bidi"
-version = "0.1.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "12ca465817de1670c6c1a830c0f4a0a665434e4d02c30a7ffc6362e0194f9cc9"
+checksum = "451e9db3745b499d24011e3927feb95994ec9a35add4b3d98d21b9bef2469aa4"
 dependencies = [
  "gpui-pre",
  "unicode-bidi",
